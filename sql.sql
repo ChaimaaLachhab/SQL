@@ -124,3 +124,7 @@ SELECT COUNT(*) AS total FROM Invites;
 -- Compter le nombre d'invités avec le statut 'Suspect' 
 
 SELECT COUNT(*) AS total, statut FROM Invites where statut ="Suspect";
+
+-- Trouver le premier mouvement enregistré de n'importe quel invité.
+
+ select * from Mouvements m join Invites i on i.id_invite = m.id_invite where  m.id_invite = null
