@@ -120,3 +120,7 @@ select nom, statut from Invites;
 -- Compter le nombre total d'invités
 
 SELECT COUNT(*) AS total FROM Invites; 
+
+-- Compter le nombre d'invités avec le statut 'Suspect' 
+
+SELECT COUNT(*) AS total, statut FROM Invites where statut ="Suspect";
