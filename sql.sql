@@ -113,4 +113,10 @@ INSERT INTO Indices (id_indice, description, id_room) VALUES (5,
 
 select * from Invites;
 
+-- Lister les noms et statuts de tous les invités
 
+select nom, statut from Invites;
+
+-- Compter le nombre total d'invités
+
+SELECT COUNT(*) AS total FROM Invites; 
